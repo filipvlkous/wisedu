@@ -2,6 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  presets: ["@next/babel"],
+  dangerouslyAllowSVG: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
