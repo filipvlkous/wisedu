@@ -6,11 +6,16 @@ import Circle3 from "../../../public/Ellipse 6.svg";
 import Circle4 from "../../../public/Ellipse 3.svg";
 import Link from "next/link";
 import Image from "next/image";
+
+// eslint-disable-next-line react-hooks/exhaustive-deps
 import { useAnimation, motion } from "framer-motion";
 
 export default function index() {
-  const useimgAnimation = useAnimation();
-  const useneagativeImgAnimation = useAnimation();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const useimgAnimation = useAnimation({});
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const useneagativeImgAnimation = useAnimation({});
 
   function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
