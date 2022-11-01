@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
 export default function _error() {
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 font-Bitter pt-10">
@@ -13,14 +12,9 @@ export default function _error() {
             href="/"
             className=" cursor-pointer text-xl sm:text-3xl md:text-4xl lg:text-2xl font-bold px-5 py-1 rounded-3xl border-2 text-white border-primary bg-primary"
           >
-            Zpatky
+            Zpátky
           </Link>
         </motion.div>{" "}
-        <img
-          width={300}
-          height={300}
-          src="https://c.tenor.com/lx2WSGRk8bcAAAAC/pulp-fiction-john-travolta.gif"
-        />
       </div>
     </section>
   );

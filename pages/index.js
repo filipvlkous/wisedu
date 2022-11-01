@@ -1,6 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Hero from "../components/home/Hero/Index";
 import Cards from "../components/home/Cards/index";
 import Stats from "../components/home/stats/index";
