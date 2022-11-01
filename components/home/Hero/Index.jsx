@@ -9,8 +9,8 @@ import Image from "next/image";
 import { useAnimation, motion } from "framer-motion";
 
 export default function index() {
-  const imgAnimation = useAnimation();
-  const neagativeImgAnimation = useAnimation();
+  const useimgAnimation = useAnimation();
+  const useneagativeImgAnimation = useAnimation();
 
   function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
@@ -70,7 +70,7 @@ export default function index() {
           </div>
           <div className="relative z-9 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6 pt-10">
             <div className=" relative">
-              <motion.div animate={imgAnimation}>
+              <motion.div animate={useimgAnimation}>
                 <Image
                   alt="kruh"
                   priority={true}
@@ -79,7 +79,7 @@ export default function index() {
                   src={Circle2}
                 />
               </motion.div>
-              <motion.div animate={neagativeImgAnimation}>
+              <motion.div animate={useneagativeImgAnimation}>
                 <Image
                   alt="kruh"
                   priority={true}
@@ -96,7 +96,7 @@ export default function index() {
               />
               <motion.div
                 alt="Girl learning accounting"
-                animate={neagativeImgAnimation}
+                animate={useneagativeImgAnimation}
               >
                 <Image
                   alt="kruh"
@@ -106,7 +106,7 @@ export default function index() {
                   quality={30}
                 />
               </motion.div>
-              <motion.div animate={imgAnimation}>
+              <motion.div animate={useimgAnimation}>
                 <Image
                   alt="kruh"
                   src={Circle4}
