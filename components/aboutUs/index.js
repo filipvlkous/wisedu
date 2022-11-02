@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import vektor from "../../public/vector 1.png";
+import vektor from "../../public/Vector 1.png";
 export default function Index() {
   return (
     <section className=" overflow-hidden md:overflow-visible mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  font-Bitter">
