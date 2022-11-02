@@ -12,10 +12,10 @@ import { useAnimation, motion } from "framer-motion";
 
 export default function index() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const useimgAnimation = useAnimation({});
+  const imgAnimation = useAnimation({});
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const useneagativeImgAnimation = useAnimation({});
+  const neagativeImgAnimation = useAnimation({});
 
   function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
@@ -75,7 +75,7 @@ export default function index() {
           </div>
           <div className="relative z-9 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6 pt-10">
             <div className=" relative">
-              <motion.div animate={useimgAnimation}>
+              <motion.div animate={imgAnimation}>
                 <Image
                   alt="kruh"
                   priority={true}
@@ -84,7 +84,7 @@ export default function index() {
                   src={Circle2}
                 />
               </motion.div>
-              <motion.div animate={useneagativeImgAnimation}>
+              <motion.div animate={neagativeImgAnimation}>
                 <Image
                   alt="kruh"
                   priority={true}
@@ -101,7 +101,7 @@ export default function index() {
               />
               <motion.div
                 alt="Girl learning accounting"
-                animate={useneagativeImgAnimation}
+                animate={neagativeImgAnimation}
               >
                 <Image
                   alt="kruh"
@@ -111,7 +111,7 @@ export default function index() {
                   quality={30}
                 />
               </motion.div>
-              <motion.div animate={useimgAnimation}>
+              <motion.div animate={imgAnimation}>
                 <Image
                   alt="kruh"
                   src={Circle4}

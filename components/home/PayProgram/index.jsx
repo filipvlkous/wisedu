@@ -7,12 +7,13 @@ export default function PayProgram() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const animation = useAnimation({});
+
   useEffect(() => {
     if (isInView) {
-      console.log("in view");
       animation.start("visible");
     }
   }, [isInView]);
+
   return (
     <section className="bg-neutral-800 py-40">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 font-Bitter ">
@@ -23,7 +24,7 @@ export default function PayProgram() {
           animate="visible"
           //whileInView="visible"
           // className=" flex flex-col justify-center lg:flex-row gap-10"
-          className=" flex flex-row gap-10 [&>*]:flex-1"
+          className=" flex flex-col lg:flex-row gap-10 [&>*]:flex-1"
         >
           <motion.div variants={item}>
             <Card
