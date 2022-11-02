@@ -13,7 +13,7 @@ export default function Example() {
         <div className="relative">
           <div className="absolute inset-0 h-1/2 bg-white" />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl  mx-auto">
               <motion.dl
                 style={{ y: y2 }}
                 className="rounded-lg bg-white shadow-xl sm:grid sm:grid-cols-3"

@@ -14,7 +14,7 @@ export default function ThreeD() {
           <div className=" h-[550px] w-[500px] cursor-pointer">
             <Spline scene="https://prod.spline.design/h7-8Evtl-BgHKNjH/scene.splinecode" />
           </div>
-          <div className="  lg:pl-24">
+          <div className=" z-10 lg:pl-24">
             <h2 className=" pb-6 font-extrabold text-3xl text-primary">
               Kde bude hodina probíhat?
             </h2>
@@ -25,7 +25,7 @@ export default function ThreeD() {
             </p>
           </div>
           <motion.div
-            className=" absolute right-0 top-0 w-52 z-20"
+            className=" absolute z-0 right-0 top-[-65px] lg:top-0  w-52 "
             style={{ x: x1 }}
           >
             <Image src={Obraze} />

@@ -70,7 +70,7 @@ export default function Example() {
                       href="/about"
                       className=" px-2 link text-lg font-medium link-underline link-underline-black text-black hover:text-primary "
                     >
-                      <span>O nas</span>
+                      <span>O nás</span>
                     </Link>
                     <a
                       onClick={() => {
@@ -89,7 +89,7 @@ export default function Example() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className=" sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* {navigation.map((item) => (
                 <Disclosure.Button
@@ -107,6 +107,35 @@ export default function Example() {
                   {item.name}
                 </Disclosure.Button>
               ))} */}
+              <Link
+                href="/"
+                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Domu
+              </Link>
+              <Link
+                href="/rezervace"
+                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Reyervace
+              </Link>
+              <Link
+                href="/about"
+                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                O nás
+              </Link>
+              <a
+                onClick={() => {
+                  window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: "smooth",
+                  });
+                }}
+                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Kontakty
+              </a>
             </div>
           </Disclosure.Panel>
         </>
