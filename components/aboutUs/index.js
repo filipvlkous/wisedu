@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import vektor from "../../public/Vector 1.png";
+import img1 from "../../public/Group 1.svg";
+import { motion, useScroll, useTransform } from "framer-motion";
 export default function Index() {
+  const { scrollYProgress } = useScroll();
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, 300]);
   return (
     <section className=" overflow-hidden md:overflow-visible mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  font-Bitter">
       <div className=" flex relative w-full py-20 sm:py-22  lg:flex-row flex-col ">
@@ -11,6 +15,12 @@ export default function Index() {
           </h1>
           <Image className="pt-3 w-96" src={vektor} alt="underline" />
         </div>
+        <motion.div
+          style={{ y: y2 }}
+          className=" invisible md:visible absolute left-0 w-36 h-auto"
+        >
+          <Image src={img1} />
+        </motion.div>
       </div>
     </section>
   );

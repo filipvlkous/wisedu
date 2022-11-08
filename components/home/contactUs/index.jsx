@@ -1,6 +1,32 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Modal from "./modal";
 
 export default function Example() {
+  const form = useRef();
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "WisdomEdu_service",
+        "template_mnils8e",
+        form.current,
+        "user_bwXhZ3P0vFP8RTBjZA0qJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  }
   return (
     <div className="relative bg-white font-Bitter transition-all duration-300 pt-12">
       <div className="absolute inset-0 ">
@@ -10,11 +36,16 @@ export default function Example() {
         <div className=" py-2 lg:py-2 px-4 sm:px-6 lg:col-span-2 lg:px-8  xl:pr-12">
           <div className="max-w-lg mx-auto">
             <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-              Neváhejte nás kontaktovat.
+              Napište nám.
             </h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-              massa dictumst amet. Sapien tortor lacus arcu.
+              Rádi Vám zodpovíme veškeré vaše dotazy nebo se chcete jen dozvědět
+              více o
+              <span className=" text-primary font-extrabold">
+                {" "}
+                Wisdom Education
+              </span>
+              ? Neváhejte nás kontaktovat.
             </p>
             <dl className="mt-8 text-base text-gray-500">
               <div className="mt-6">
@@ -24,7 +55,7 @@ export default function Example() {
                     className="flex-shrink-0 h-6 w-6 text-gray-400"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">+1 (555) 123-4567</span>
+                  <span className="ml-3">+420 773 234 540</span>
                 </dd>
               </div>
               <div className="mt-3">
@@ -40,20 +71,31 @@ export default function Example() {
             </dl>
           </div>
         </div>
-        <div className=" py-2 px-4 sm:px-6 lg:col-span-3 lg:py-2 lg:px-8 xl:pl-12">
+        <div className=" relative py-2 px-4 sm:px-6 lg:col-span-3 lg:py-2 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              action="#"
+              method="POST"
+              className="grid grid-cols-1 gap-y-6"
+            >
+              {/* <div className="absolute text-center ">
+                <Modal />
+              </div> */}
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full-name
                 </label>
+
                 <input
                   type="text"
                   name="full-name"
                   id="full-name"
                   autoComplete="name"
-                  className="block w-full bor shadow-lg py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded-md"
+                  className="block w-full shadow-lg py-3 px-4 placeholder-gray-500 border-primary focus:border-primary border-2 rounded-md focus:ml-2 transition-all duration-250"
                   placeholder="Celé jméno"
+                  required
                 />
               </div>
               <div>
@@ -65,8 +107,9 @@ export default function Example() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full shadow-lg py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded-md"
+                  className="block w-full shadow-lg py-3 px-4 placeholder-gray-500 border-primary focus:border-primary border-2 rounded-md focus:ml-2 transition-all duration-250"
                   placeholder="Email"
+                  required
                 />
               </div>
               <div>
@@ -75,11 +118,13 @@ export default function Example() {
                 </label>
                 <input
                   type="text"
+                  pattern={"[0-9]{3}[0-9]{3}[0-9]{3}"}
                   name="phone"
                   id="phone"
                   autoComplete="tel"
-                  className="block w-full shadow-lg py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border-gray-300 rounded-md"
+                  className="block w-full shadow-lg py-3 px-4 placeholder-gray-500 border-primary focus:border-primary border-2 rounded-md focus:ml-2 transition-all duration-250"
                   placeholder="Telefon"
+                  required
                 />
               </div>
               <div>
@@ -87,22 +132,23 @@ export default function Example() {
                   Message
                 </label>
                 <textarea
+                  minLength={5}
                   id="message"
                   name="message"
-                  rows={4}
-                  className="block w-full shadow-lg py-3 px-4 placeholder-gray-500 focus:ring-primary focus:border-primary border border-gray-300 rounded-md"
+                  rows={5}
+                  className="block w-full shadow-lg py-3 px-4 placeholder-gray-500 border-primary focus:border-primary border-2 rounded-md focus:ml-2 transition-all duration-250"
                   placeholder="Zpráva"
                   defaultValue={""}
+                  required
                 />
               </div>
-              <div>
-                <button
-                  type="submit"
-                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary hover:bg-primaryClicked focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Odeslat
-                </button>
-              </div>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                type="submit"
+                className=" w-2/6 inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Odeslat
+              </motion.button>
             </form>
           </div>
         </div>

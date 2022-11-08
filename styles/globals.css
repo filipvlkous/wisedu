@@ -102,3 +102,35 @@
   align-items: center;
   display: flex;
 }
+
+.niki {
+  position: relative;
+}
+
+.niki::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: -12px;
+  width: 120%;
+  z-index: -3;
+  border: solid 5px #DE75D3;
+  border-color: #DE75D3 transparent transparent transparent;
+  border-radius: 100%;
+}
+
+.tomas {
+  position: relative;
+}
+
+.tomas::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: -12px;
+  width: 120%;
+  z-index: -3;
+  border: solid 5px #4A5CFF;
+  border-color: #4A5CFF transparent transparent transparent;
+  border-radius: 100%;
+}
