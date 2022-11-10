@@ -1,12 +1,15 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "./modal";
 
 export default function Example() {
+  const [show, setShow] = useState(false);
   const form = useRef();
+
   function sendEmail(e) {
+    setShow(true);
     e.preventDefault();
 
     emailjs
@@ -26,6 +29,10 @@ export default function Example() {
       );
 
     e.target.reset();
+
+    setTimeout(() => {
+      setShow(false);
+    }, 3000);
   }
   return (
     <div className="relative bg-white font-Bitter transition-all duration-300 pt-12">
@@ -65,7 +72,7 @@ export default function Example() {
                     className="flex-shrink-0 h-6 w-6 text-gray-400"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">nikol.bratosovan@seznam.cz</span>
+                  <span className="ml-3">ucetnictvisnikol@gmail.com</span>
                 </dd>
               </div>
             </dl>
@@ -78,11 +85,22 @@ export default function Example() {
               onSubmit={sendEmail}
               action="#"
               method="POST"
-              className="grid grid-cols-1 gap-y-6"
+              className="grid grid-cols-1 gap-y-6 "
             >
-              {/* <div className="absolute text-center ">
-                <Modal />
-              </div> */}
+              {/* {show ? (
+                <div className="absolute left-[50%] top-[50%] -translate-y-1/2 -translate-x-1/2 text-center ">
+                  <Modal show={() => setShow(false)} />
+                </div>
+              ) : null} */}
+              <motion.div
+                variants={itemVariants}
+                initial={false}
+                animate={show ? "open" : "closed"}
+                className="absolute left-1/3 top-1/3  text-center "
+              >
+                <Modal show={() => setShow(false)} />
+              </motion.div>
+
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full-name
@@ -156,3 +174,18 @@ export default function Example() {
     </div>
   );
 }
+
+const itemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    visibility: "visible",
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
+  closed: {
+    opacity: 0,
+    y: 20,
+    transition: { duration: 0.2 },
+    visibility: "hidden",
+  },
+};

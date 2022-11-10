@@ -6,9 +6,9 @@ import img3 from "../../../public/Next steps-rafiki.png";
 
 export default function Cards() {
   return (
-    <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 font-Bitter">
+    <section className="mx-auto max-w-7xl py-10 px-4 sm:px-6 lg:px-8 font-Bitter">
       {/* <div className="flex lg:flex-row justify-center gap-10"> */}
-      <div className=" flex flex-col lg:flex-row gap-10 [&>*]:flex-1">
+      <div className=" flex flex-col lg:flex-row gap-10 [&>*]:flex-1 ">
         <Card
           numb={"01"}
           text={values.a.text}

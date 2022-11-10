@@ -5,7 +5,7 @@ import { Button } from "react-scroll";
 
 export default function Card({ numb, text, img, title }) {
   return (
-    <div className=" relative px-8 py-8 bg-third flex flex-col rounded-3xl shadow-xl items-center ">
+    <div className=" relative  px-8 py-8 bg-third flex flex-col rounded-3xl shadow-xl items-center mt-20 lg:mt-0 ">
       <p className=" absolute font-Fred text-7xl top-[-40px] left-2">{numb}</p>
 
       <Image

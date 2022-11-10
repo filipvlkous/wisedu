@@ -134,3 +134,44 @@
   border-color: #4A5CFF transparent transparent transparent;
   border-radius: 100%;
 }
+
+.custom-shape-divider-bottom-1668078783 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1668078783 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 137px;
+  transform: rotateY(180deg);
+}
+
+
+
+.custom-shape-divider-bottom-1668078671 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1668078671 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 137px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1668078671 .shape-fill {
+  fill: #FFFFFF;
+}
