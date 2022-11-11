@@ -9,9 +9,9 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  experimental: {
-    nextScriptWorkers: true,
-  },
+  // experimental: {
+  //   nextScriptWorkers: true,
+  // },
 };
 
 module.exports = nextConfig;
