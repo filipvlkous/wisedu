@@ -8,7 +8,7 @@ export default function Tomas() {
         <Image
           src={photo}
           className=" w-4/5 sm:w-3/5 md:w-[500px]"
-          alt="Tomas teacher of acounting"
+          alt="Tomas učitel doučování"
         />
         <div className=" w-full flex flex-col px-20 items-start md:pl-32">
           <h2 className="tomas text-4xl font-extrabold pb-4">Tomáš</h2>

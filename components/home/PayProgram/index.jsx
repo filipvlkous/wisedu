@@ -16,7 +16,7 @@ export default function PayProgram() {
 
   return (
     <section className="relative bg-neutral-800 py-40 pb-64">
-      <div class="custom-shape-divider-bottom-1668078671">
+      <div className="custom-shape-divider-bottom-1668078671">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function PayProgram() {
         >
           <path
             d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"
+            className="shape-fill"
           ></path>
         </svg>
       </div>
@@ -40,30 +40,30 @@ export default function PayProgram() {
           // className=" flex flex-col justify-center lg:flex-row gap-10"
           className=" flex flex-col lg:flex-row gap-10 [&>*]:flex-1"
         >
-          <motion.div variants={item}>
+          <motion.li variants={item}>
             <Card
               item={navigation.Kratky}
               title={values.a.title}
               txt={values.a.txt}
               price={values.a.price}
             />
-          </motion.div>
-          <motion.div variants={item}>
+          </motion.li>
+          <motion.li variants={item}>
             <Card
               item={navigation.Stred}
               title={values.b.title}
               txt={values.b.txt}
               price={values.b.price}
             />
-          </motion.div>
-          <motion.div variants={item}>
+          </motion.li>
+          <motion.li variants={item}>
             <Card
               item={navigation.Dlouhy}
               title={values.c.title}
               txt={values.c.txt}
               price={values.c.price}
             />
-          </motion.div>
+          </motion.li>
         </motion.ul>
       </div>
     </section>

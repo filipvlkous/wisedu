@@ -42,7 +42,7 @@ export default function ThreeD() {
             className=" absolute z-0 right-0 top-[-65px] lg:top-0  w-52 "
             style={{ x: x1 }}
           >
-            <Image src={Obraze} />
+            <Image src={Obraze} alt="" />
           </motion.div>
         </div>
       </div>

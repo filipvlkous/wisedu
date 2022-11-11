@@ -5,13 +5,17 @@ import ThreeD from "../components/home/3d/index";
 import Pay from "../components/home/PayProgram/index";
 import Faq from "../components/home/faq/index";
 import ContactUs from "../components/home/contactUs/index";
+import Head from "next/head";
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>Doučování účetnictví</title>
+      </Head>
       <Hero />
       <Cards />
       <Stats />
-      <ThreeD />
+      {/* <ThreeD /> */}
       <Pay />
       <Faq />
       <ContactUs />

@@ -12,32 +12,32 @@ export default function Example() {
       <div className="absolute inset-0 h-1/2 bg-white" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl  mx-auto">
-          <motion.dl
+          <motion.div
             style={{ y: y2 }}
             className="rounded-lg bg-white shadow-xl sm:grid sm:grid-cols-3"
           >
             <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+              <h4 className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Studentů
-              </dt>
+              </h4>
               <Count prefix={"+"} numb={50} duration={2} suffix={""} />
             </div>
             <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+              <d4 className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Spokojenost
-              </dt>
+              </d4>
               <Count prefix={""} numb={100} duration={2.3} suffix={" %"} />
             </div>
             <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+              <d4 className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Odučených hodin
-              </dt>
+              </d4>
               <Count prefix={"+"} numb={200} duration={2.9} suffix={""} />
             </div>
-          </motion.dl>
+          </motion.div>
         </div>
         <motion.div style={{ y: y1 }}>
-          <Image src={Image1} alt="kolo" />
+          <Image src={Image1} alt="" />
         </motion.div>
       </div>
     </div>

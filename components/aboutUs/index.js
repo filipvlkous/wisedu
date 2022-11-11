@@ -13,13 +13,13 @@ export default function Index() {
           <h1 className="text-4xl  md:text-4xl lg:text-5xl font-bold text-black  ">
             Něco o nás
           </h1>
-          <Image className="pt-3 w-96" src={vektor} alt="underline" />
+          <Image className="pt-3 w-96" src={vektor} alt="" />
         </div>
         <motion.div
           style={{ y: y2 }}
           className=" invisible md:visible absolute left-0 w-36 h-auto"
         >
-          <Image src={img1} />
+          <Image src={img1} alt="" />
         </motion.div>
       </div>
     </section>

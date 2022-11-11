@@ -1,7 +1,5 @@
 import React from "react";
-import Obraz from "../../../public/Startled-rafiki.png";
 import Image from "next/image";
-import { Button } from "react-scroll";
 
 export default function Card({ numb, text, img, title }) {
   return (

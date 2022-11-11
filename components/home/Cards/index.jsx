@@ -14,18 +14,21 @@ export default function Cards() {
           text={values.a.text}
           img={img1}
           title={values.a.title}
+          alt="Dva lidé si nev rady se školní látkou."
         />
         <Card
           numb={"02"}
           text={values.b.text}
           img={img2}
           title={values.b.title}
+          alt="Dva lidé sedí u počítače a učí se účtování"
         />
         <Card
           numb={"03"}
           text={values.c.text}
           img={img3}
           title={values.c.title}
+          alt="Člověk jde po schodech, výsledek doučování."
         />
       </div>
     </section>

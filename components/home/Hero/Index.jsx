@@ -43,24 +43,24 @@ export default function index() {
         <div className=" flex relative w-full py-20 sm:py-32 lg:pb-32 xl:pb-36 lg:flex-row flex-col ">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6 text-center lg:text-start ">
             <h1 className="text-5xl  md:text-5xl lg:text-6xl font-bold text-black ">
-              Nějaký super
+              Účetnictví,
+              <br /> že ho každý
               <br />{" "}
               <span className="here text-6xl  md:text-6xl lg:text-7xl">
-                slogan
+                pochopí
               </span>{" "}
-              tady <br /> bude.
             </h1>
-            <p className=" lg:w-3/5 text-lg py-10">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer
-              pellentesque quam vel velit. Praesent dapibus. Nunc tincidunt ante
-            </p>
+            <h2 className=" lg:w-3/5 text-lg py-10">
+              Rádi tě naučíme veškeré znalosti účetnictví tak, abys úspěšně
+              složil maturitní nebo jinou zkoušku a ještě tě to bavilo.
+            </h2>
             <div className="mt-8 flex flex-wrap gap-x-10 justify-center lg:justify-start  ">
               <motion.div whileHover={{ scale: 1.05 }}>
                 <Link
                   href="/rezervace"
                   className=" cursor-pointer text-xl sm:text-3xl md:text-4xl lg:text-2xl font-bold px-4 py-2 rounded-3xl border-4 text-white border-primary bg-primary"
                 >
-                  Rezervovat
+                  Rezervovat konzultci
                 </Link>
               </motion.div>
               {/* <motion.div whileHover={{ scale: 1.05 }}>
@@ -77,7 +77,7 @@ export default function index() {
             <div className=" relative">
               <motion.div animate={imgAnimation}>
                 <Image
-                  alt="kruh"
+                  alt=""
                   priority={true}
                   quality={30}
                   className="eye absolute top-[-150px] right-[0px] h-52 w-auto "
@@ -86,7 +86,7 @@ export default function index() {
               </motion.div>
               <motion.div animate={neagativeImgAnimation}>
                 <Image
-                  alt="kruh"
+                  alt=""
                   priority={true}
                   quality={30}
                   src={Circle3}
@@ -97,14 +97,12 @@ export default function index() {
                 priority={true}
                 quality={50}
                 className=" z-20"
+                alt="Dívka drží počítač a doučuje účetictví"
                 src={MainImg}
               />
-              <motion.div
-                alt="Girl learning accounting"
-                animate={neagativeImgAnimation}
-              >
+              <motion.div animate={neagativeImgAnimation}>
                 <Image
-                  alt="kruh"
+                  alt=""
                   src={Circle1}
                   className="absolute h-44 w-auto"
                   priority={true}
@@ -113,7 +111,7 @@ export default function index() {
               </motion.div>
               <motion.div animate={imgAnimation}>
                 <Image
-                  alt="kruh"
+                  alt=""
                   src={Circle4}
                   className="absolute right-1"
                   priority={true}

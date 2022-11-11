@@ -12,7 +12,7 @@ export default function Niky() {
         <Image
           src={photo}
           className=" w-4/5 sm:w-3/5 md:w-[500px] pb-10 md:pb-0"
-          alt="Niki teacher of acounting"
+          alt="Niki učitelka doučování"
         />
         <div className=" w-full flex flex-col px-20 items-start md:pl-32">
           <h2 className="niki inline text-4xl font-extrabold pb-4">Niky</h2>
@@ -34,7 +34,7 @@ export default function Niky() {
           style={{ y: y1 }}
           className="  md:visible absolute right-0 bottom-0 w-36 h-auto"
         >
-          <Image src={img1} />
+          <Image src={img1} alt="" />
         </motion.div>
       </div>
     </section>
