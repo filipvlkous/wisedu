@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <Cards />
       <Stats />
-      {/* <ThreeD /> */}
+      <ThreeD />
       <Pay />
       <Faq />
       <ContactUs />

@@ -12,7 +12,7 @@ export default function about() {
       </Head>
       <AboutUs />
       <Niky />
-      <Tomas />
+      {/* <Tomas /> */}
       <Contact />
     </div>
   );
