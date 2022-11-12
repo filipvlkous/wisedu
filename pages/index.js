@@ -6,9 +6,23 @@ import Pay from "../components/home/PayProgram/index";
 import Faq from "../components/home/faq/index";
 import ContactUs from "../components/home/contactUs/index";
 import { NextSeo } from "next-seo";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
 export default function Home() {
+  // const Cards = dynamic(() => import("../components/home/Cards/index"), {
+  //   suspense: true,
+  // });
+  // const Pay = dynamic(() => import("../components/home/PayProgram/index"), {
+  //   suspense: true,
+  // });
+
+  // const ThreeD = dynamic(() => import("../components/home/3d/index"), {
+  //   suspense: true,
+  // });
+
   return (
-    <main>
+    <section>
       <NextSeo
         title="Doučování účetnictví | Wisdom Education"
         description="Doučování účetnictví od Wisdom Education tak, že ho každý pochopí. Doučujeme látku střední školy s garancí úspěšného složení maturity z tohoto předmětu."
@@ -50,6 +64,7 @@ export default function Home() {
           siteName: "Wisdom Education",
         }}
       />
+
       <Hero />
       <Cards />
       <Stats />
@@ -57,6 +72,6 @@ export default function Home() {
       <Pay />
       <Faq />
       <ContactUs />
-    </main>
+    </section>
   );
 }

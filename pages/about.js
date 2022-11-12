@@ -6,7 +6,7 @@ import Contact from "../components/home/contactUs/index";
 import { NextSeo } from "next-seo";
 export default function about() {
   return (
-    <main>
+    <section>
       <NextSeo
         title="O nás | Wisdom Education"
         description="Náš tým Wisdom Education ti je plně k dispozici nejen pro doučování ale také pro jaké koliv dotazy ohledně účetnictví a programum pomocí kterých účtujeme."
@@ -31,6 +31,6 @@ export default function about() {
       <Niky />
       {/* <Tomas /> */}
       <Contact />
-    </main>
+    </section>
   );
 }

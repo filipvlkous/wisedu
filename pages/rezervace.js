@@ -1,14 +1,21 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import React from "react";
 import { InlineWidget } from "react-calendly";
 export default function rezervace() {
   return (
-    <main>
-      <Head>
-        <title>Rezervace</title>
-        <meta name="description" content="" />
-      </Head>
+    <section>
+      <NextSeo
+        title="Doučování účetnictví | Wisdom Education"
+        description="S Wisdom Education si můžete rezervovat první hodinu konzultace Zdarma a zjistit zda Vám doopravdy naše učební metody seděj."
+        openGraph={{
+          url: "https://www.wisdomeducation.cz/rezervace",
+          title: "Rezervace konzultace | Wisdom Education",
+          description:
+            "S Wisdom Education si můžete rezervovat první hodinu konzultace Zdarma a zjistit zda Vám doopravdy naše učební metody seděj.",
+          siteName: "Wisdom Education",
+        }}
+      />
       <InlineWidget url="https://calendly.com/wisdomeducation" />
-    </main>
+    </section>
   );
 }

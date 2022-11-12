@@ -14,14 +14,14 @@ export default function Cards() {
           text={values.a.text}
           img={img1}
           title={values.a.title}
-          alt="Dva lidé si nev rady se školní látkou."
+          alt="Dva lidé si nev rady co s dělat účetnictvím."
         />
         <Card
           numb={"02"}
           text={values.b.text}
           img={img2}
           title={values.b.title}
-          alt="Dva lidé sedí u počítače a učí se účtování"
+          alt="Dva lidé sedí u počítače a učí se účetnictví online."
         />
         <Card
           numb={"03"}
