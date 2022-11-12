@@ -1,9 +1,9 @@
 import React from "react";
-import MainImg from "../../../public/Group 21.png";
-import Circle1 from "../../../public/Group 1.svg";
-import Circle2 from "../../../public/Group 2.svg";
-import Circle3 from "../../../public/Ellipse 6.svg";
-import Circle4 from "../../../public/Ellipse 3.svg";
+import MainImg from "../../../public/Group21.png";
+import Circle1 from "../../../public/Group1.svg";
+import Circle2 from "../../../public/Group2.svg";
+import Circle3 from "../../../public/Ellipse6.svg";
+import Circle4 from "../../../public/Ellipse3.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -63,14 +63,6 @@ export default function index() {
                   Rezervovat konzultci
                 </Link>
               </motion.div>
-              {/* <motion.div whileHover={{ scale: 1.05 }}>
-                <Link
-                  to="/about"
-                  className=" cursor-pointer text-lg sm:text-3xl md:text-4xl lg:text-2xl font-bold px-4 py-2 rounded-3xl border-4 text-primary border-primary"
-                >
-                  Tlacitko
-                </Link>
-              </motion.div> */}
             </div>
           </div>
           <div className="relative z-9 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6 pt-10">

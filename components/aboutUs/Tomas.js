@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import photo from "../../public/Group 21.png";
+import photo from "../../public/Group21.png";
 export default function Tomas() {
   return (
     <section className=" overflow-hidden md:overflow-visible mx-auto max-w-7xl px-4 sm:px-6 py-24 lg:px-8 font-Bitter">

@@ -5,10 +5,6 @@ import JustLogo from "../../public/OnlyLogo.svg";
 import Link from "next/link";
 import Image from "next/image";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Example() {
   return (
     <Disclosure as="nav" className=" w-full z-20 ">

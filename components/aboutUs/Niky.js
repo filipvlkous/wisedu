@@ -1,7 +1,7 @@
 import Image from "next/image";
 import photo from "../../public/niki.png";
 import { motion, useScroll, useTransform } from "framer-motion";
-import img1 from "../../public/Ellipse 3.svg";
+import img1 from "../../public/Ellipse3.svg";
 export default function Niky() {
   const { scrollYProgress } = useScroll();
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -300]);

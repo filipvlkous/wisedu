@@ -1,6 +1,6 @@
 import Count from "./countUp";
 import Image from "next/image";
-import Image1 from "../../../public/Ellipse 4.svg";
+import Image1 from "../../../public/Ellipse4.svg";
 import { motion, useScroll, useTransform } from "framer-motion";
 export default function Example() {
   const { scrollYProgress } = useScroll();
@@ -23,15 +23,15 @@ export default function Example() {
               <Count prefix={"+"} numb={50} duration={2} suffix={""} />
             </div>
             <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-              <d4 className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+              <h4 className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Spokojenost
-              </d4>
+              </h4>
               <Count prefix={""} numb={100} duration={2.3} suffix={" %"} />
             </div>
             <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-              <d4 className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+              <h4 className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
                 Odučených hodin
-              </d4>
+              </h4>
               <Count prefix={"+"} numb={200} duration={2.9} suffix={""} />
             </div>
           </motion.div>

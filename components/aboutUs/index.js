@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import vektor from "../../public/Vector 1.png";
-import img1 from "../../public/Group 1.svg";
+import vektor from "../../public/Vector1.png";
+import img1 from "../../public/Group1.svg";
 import { motion, useScroll, useTransform } from "framer-motion";
 export default function Index() {
   const { scrollYProgress } = useScroll();
