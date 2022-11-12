@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.9.1",
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "^2.0.12",
+    "@next/font": "^13.0.3",
     "@splinetool/react-spline": "^2.2.3",
     "framer-motion": "^7.6.2",
     "next": "13.0.0",

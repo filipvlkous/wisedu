@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Bitter: ["Comfortaa", "cursive"],
-        Fred: ["Fredericka the Great", " cursive"],
+        Fred: ["var(--font-inter)", "cursive"],
       },
       aspectRatio: {
         "4/3": "4 / 3",
