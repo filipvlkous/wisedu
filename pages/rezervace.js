@@ -5,11 +5,11 @@ export default function rezervace() {
   return (
     <section>
       <NextSeo
-        title="Doučování účetnictví | Wisdom Education"
+        title="Rezervace konzultce | Wisdom Education"
         description="S Wisdom Education si můžete rezervovat první hodinu konzultace Zdarma a zjistit zda Vám doopravdy naše učební metody seděj."
         openGraph={{
           url: "https://www.wisdomeducation.cz/rezervace",
-          title: "Rezervace konzultace | Wisdom Education",
+          title: "Rezervace konzultce | Wisdom Education",
           description:
             "S Wisdom Education si můžete rezervovat první hodinu konzultace Zdarma a zjistit zda Vám doopravdy naše učební metody seděj.",
           siteName: "Wisdom Education",
