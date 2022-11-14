@@ -37,15 +37,15 @@ export default function Cards() {
 
 const values = {
   a: {
-    title: "Jak to začne?",
-    text: "Předem se vždy dohodneme jaké učivo budeme spolu probírat. (První konzultace je ZDARMA). Já si přichystám svůj materiál na domluvenou hodinu, který spolu probereme. ",
+    title: "Jak doučování začne?",
+    text: "Předem se vždy dohodneme jaké učivo budeme spolu probírat. (První konzultace je ZDARMA). Já si přichystám svůj materiál, který spolu probereme, na domluvenou hodinu.",
   },
   b: {
-    title: "Jak to bude probíhat?",
-    text: "Na začátku hodiny probereme tvé znalosti a dovednosti v daném tématu. Podle toho přizpůsobím tempo a příklady výuky. Vždycky je prostor na dotazy. ",
+    title: "Jak lekce bude probíhat?",
+    text: "Na začátku hodiny probereme tvé znalosti a dovednosti v daném tématu. Podle toho přizpůsobím tempo a náročnost příkladů ve výuce. Na mé lekci je vždy prostor na dotazy. Pokud něčemu nebudeš rozumět, stačí se ozvat. :) ",
   },
   c: {
-    title: "Jak to skončí?",
-    text: "Až hodina skončí veškerý materiál, který probereme, zašlu na tvůj e-mail. Můžeme se dohodnout i na úkolech, které ti mohu připravit. Sám/a si je vypracuješ a na další hodině je zkontrolujeme a probereme kde byla chyba. ",
+    title: "Lekce je u konce, co teď?",
+    text: "Až hodina skončí veškerý materiál, který probereme, zašlu na tvůj e-mail. Můžeme se dohodnout i na úkolech, které ti mohu připravit. Sám/a si je vypracuješ a na další hodině je zkontrolujeme. Případné chyby nebo nesrovnalosti si vysvětlíme. ",
   },
 };

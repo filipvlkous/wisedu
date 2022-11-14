@@ -12,16 +12,17 @@ export default function Niky() {
         <Image
           src={photo}
           className=" w-4/5 sm:w-3/5 md:w-[500px] pb-10 md:pb-0"
-          alt="Niki učitelka doučování"
+          alt="Nikol učitelka doučování"
         />
         <div className=" w-full flex flex-col px-20 items-start md:pl-32">
-          <h2 className="niki inline text-4xl font-extrabold pb-4">Niky</h2>
+          <h2 className="niki inline text-4xl font-extrabold pb-4">Nikol</h2>
           <p className=" w-5/5 md:w-4/5">
             Ahoj, jmenuji se Nikola a jsem studentka Vysoké školy ekonomické v
             Praze. Studuji fakultu financí a účetnictví. Z účetnictví a
             ekonomiky jsem na střední škole odmaturovala na jedničky. Stále se
-            ve svém oboru vzdělávám. Doučuji studenty, kteří studují střední
-            školu a nevědí si rady.
+            ve svém oboru vzdělávám. Jsem empatická, trpělivá a ráda ti pomohu s
+            účetnictvím. Věř mi, není to žádná věda. :) Doučuji studenty, kteří
+            studují především střední školu.
           </p>
           <div>
             <p className=" text-xl pt-5 font-extrabold">Dovednosti</p>

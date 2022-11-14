@@ -64,7 +64,6 @@ export default function Home() {
           siteName: "Wisdom Education",
         }}
       />
-
       <Hero />
       <Cards />
       <Stats />

@@ -10,11 +10,11 @@ export default function Card({ item, title, txt, price }) {
       }}
       className=" relative px-8 py-8 bg-white flex flex-col rounded-3xl shadow-xl items-center "
     >
-      <h3 className=" item-center font-extrabold text-3xl text-Black">
+      <h3 className=" item-center text-center font-extrabold text-3xl text-Black">
         {title}
       </h3>
       <div className=" flex flex-col pt-3 pb-7 gap-3">
-        <p>&#x2022; 1 lekce trva 60 mim</p>
+        <p>&#x2022; 1 lekce = 60 minut</p>
         {txt.map(function (object, i) {
           return <p key={i}>&#x2022; {object}</p>;
         })}

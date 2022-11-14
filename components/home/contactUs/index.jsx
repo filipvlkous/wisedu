@@ -55,7 +55,7 @@ export default function Example() {
               ? Neváhejte nás kontaktovat.
             </p>
             <dl className="mt-8 text-base text-gray-500">
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
                   <PhoneIcon
@@ -64,7 +64,7 @@ export default function Example() {
                   />
                   <span className="ml-3">+420 773 234 540</span>
                 </dd>
-              </div>
+              </div> */}
               <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">

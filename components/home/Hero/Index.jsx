@@ -60,7 +60,7 @@ export default function index() {
                   href="/rezervace"
                   className=" cursor-pointer text-xl sm:text-3xl md:text-4xl lg:text-2xl font-bold px-4 py-2 rounded-3xl border-4 text-white border-primary bg-primary"
                 >
-                  Rezervovat konzultci
+                  Rezervovat konzultaci
                 </Link>
               </motion.div>
             </div>

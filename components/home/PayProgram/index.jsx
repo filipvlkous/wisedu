@@ -72,28 +72,28 @@ export default function PayProgram() {
 
 const values = {
   a: {
-    title: "Jednorázová lekce",
+    title: "Jednorázové doučování",
     txt: [
       "1 - 2 lekce doučování",
       "Tento balíček je vhodný pokud si potřebuješ ujasnit pouze určitou látku.",
     ],
-    price: "380 Kc/h",
+    price: "380 Kč/h",
   },
   b: {
-    title: "Střednědobá lekce",
+    title: "Krátkodobé doučování",
     txt: [
       "3-15 lekcí doučování",
       "Nejsi si jistý v účetnictví? Můžeme spolu probrat témata který ti dělají problém.",
     ],
-    price: "350 Kc/h",
+    price: "350 Kč/h",
   },
   c: {
-    title: "Dlouhodobá lekce",
+    title: "Dlouhodobé doučování",
     txt: [
       "16 a více lekcí",
       "Pokud chceš soustavnou přípravu na maturitu nebo jen v účetnictví vyniknout.",
     ],
-    price: "300 Kc/h",
+    price: "300 Kč/h",
   },
 };
 

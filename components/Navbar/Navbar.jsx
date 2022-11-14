@@ -52,13 +52,7 @@ export default function Example() {
                       href="/"
                       className=" px-2 cursor-pointer text-lg font-medium link-underline link-underline-black text-black hover:text-primary "
                     >
-                      <span>Domu</span>
-                    </Link>
-                    <Link
-                      href="/rezervace"
-                      className=" px-2 cursor-pointer text-lg font-medium link-underline link-underline-black text-black hover:text-primary "
-                    >
-                      <span>Rezervace</span>
+                      <span>Domů</span>
                     </Link>
 
                     <Link
@@ -66,6 +60,12 @@ export default function Example() {
                       className=" px-2 link text-lg font-medium link-underline link-underline-black text-black hover:text-primary "
                     >
                       <span>O nás</span>
+                    </Link>
+                    <Link
+                      href="/rezervace"
+                      className=" px-2 cursor-pointer text-lg font-medium link-underline link-underline-black text-black hover:text-primary "
+                    >
+                      <span>Rezervace</span>
                     </Link>
                     <button
                       onClick={() => {
@@ -106,13 +106,13 @@ export default function Example() {
                 href="/"
                 className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                Domu
+                Domů
               </Link>
               <Link
                 href="/rezervace"
                 className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                Reyervace
+                Rezervace
               </Link>
               <Link
                 href="/about"
