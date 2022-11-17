@@ -29,7 +29,14 @@ export default function Example() {
         </nav>
 
         <p className="mt-8 text-center text-base text-gray-400">
-          &copy; 2022 DreamDesigns, Všechna práva vyhrazena.
+          &copy; 2022{" "}
+          <a
+            href="https://dreamdesigns-82f54.web.app/"
+            className=" text-blue-400 font-bold"
+          >
+            DreamDesigns
+          </a>
+          , Všechna práva vyhrazena.
         </p>
       </div>
     </footer>

@@ -23,7 +23,7 @@ export default function Card({ item, title, txt, price }) {
 
       <Link
         href={"/rezervace"}
-        className=" cursor-pointer text-xl lg:text-base font-bold px-4 py-1 my-2 rounded-3xl border-4 text-white border-primary bg-primary"
+        className=" cursor-pointer text-xl text-center  lg:text-base font-bold px-4 py-1 my-2 rounded-3xl border-4 text-white border-primary bg-primary"
       >
         Zdarma rezervovat konzultaci
       </Link>

@@ -7,6 +7,7 @@ export default function _document() {
     <Html lang="cs">
       <Head>
         <link rel="shortcut icon" href="/static/favicon.ico" />
+        <meta name="robots" content="all" />
         <DefaultSeo {...SEO} />
       </Head>
       <body>
