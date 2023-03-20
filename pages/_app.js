@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar/Navbar";
 import "../styles/transition.css";
 import PageTransition from "../components/PageTransition";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -21,6 +23,7 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <PageTransition>
         <Component {...pageProps} />
+        <Analytics />
       </PageTransition>
       <Footer />
     </>
