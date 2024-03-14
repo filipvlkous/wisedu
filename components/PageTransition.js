@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 
 const PageTransition = ({ children }) => {
   const { asPath } = useRouter();
+  console.log(asPath);
   return (
     <div className="effect-1">
       <AnimatePresence initial={false} exitBeforeEnter>
