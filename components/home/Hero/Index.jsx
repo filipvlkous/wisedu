@@ -117,5 +117,3 @@ export default function index() {
     </motion.div>
   );
 }
-
-//test
